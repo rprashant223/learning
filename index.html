@@ -22,8 +22,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   
 
-<button id='but'>Toggle now</button>
+<button id="myButton">Click Me</button>
+ <script>
+      // Function to track button clicks
+      function trackButtonClick() {
+        // Send an event to Google Analytics
+        ga('send', 'event', 'button_click', 'click', 'Button Click');
+      }
 
+      // Add a click event listener to the button
+      document.getElementById('myButton').addEventListener('click', trackButtonClick);
+    </script>
 
   
 </body>
